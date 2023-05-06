@@ -20,10 +20,12 @@ class Scene3 extends Phaser.Scene{
 
         this.input.keyboard.once('keydown-ESC', () => {
             this.scene.start('pauseScreen')
+            this.clickSound.play();
         })  
 
         this.input.keyboard.once('keydown-SPACE', () => {
             this.scene.start('creditsScreen')
+            this.clickSound.play();
         })  
 
         /* this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {

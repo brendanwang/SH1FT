@@ -18,6 +18,10 @@ class Scene1 extends Phaser.Scene{
         this.load.image("title", "assets/images/title.png");
         this.load.image("rectangle", "assets/images/rectangle.png");
         this.load.image("arrow", "assets/images/arrow.png");
+        this.load.image("desktop", "assets/images/desktop.png");
+
+        this.load.audio("audio_click", ["assets/audio/click.wav"]);
+        this.load.audio("audio_slideog", ["assets/audio/slideog.wav"]);
     }
 
     create() {
